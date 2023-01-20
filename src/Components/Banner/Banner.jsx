@@ -29,7 +29,7 @@ const Banner = () => {
                             delaySpeed={3000}
                         />
                     </h3>
-                    <p className='text-xs text-gray-400 mt-6'>MERN Stack Developer, Specializing in UI/UX Developments.</p>
+                    <p className='text-sm text-gray-300 mt-6'>Highly motivated and very passionate Full Stack Developer with one years of experience in MERN Stack. And Specializing in UI Development.</p>
 
                     <button className='flex items-center justify-center gap-2 h-[60px] w-[160px] text-white border border-[#252734] rounded-full hover:bg-[#252734] duration-300 mt-10'>Get Resume <AiOutlineDownload /></button>
                 </div>
