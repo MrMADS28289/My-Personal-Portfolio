@@ -1,0 +1,11 @@
+/* Background video style */
+
+.video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    font-family: 'Sofia Sans', sans-serif;
+}
