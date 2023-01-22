@@ -1,0 +1,7 @@
+.nav-link:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Assets/Images/glass.png');
+    background-size: 9px 9px;
+}

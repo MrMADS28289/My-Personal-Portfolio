@@ -31,7 +31,10 @@ const Banner = () => {
                     </h3>
                     <p className='text-sm text-gray-300 mt-6'>Highly motivated and very passionate Full Stack Developer with one years of experience in MERN Stack. And Specializing in UI Development.</p>
 
-                    <button className='flex items-center justify-center gap-2 h-[60px] w-[160px] text-white border border-[#252734] rounded-full hover:bg-[#252734] duration-300 mt-10'>Get Resume <AiOutlineDownload /></button>
+                    <div className='flex justify-start items-center mt-10'>
+                        <button className='flex items-center justify-center gap-2 h-[60px] w-[160px] text-white border border-[#252734] rounded-full hover:bg-[#252734] duration-300'>Get Resume <AiOutlineDownload /></button>
+                        <div className='w-[30px] border-t border-gray-500' />
+                    </div>
                 </div>
 
                 <div className='h-full'>
