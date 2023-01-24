@@ -5,3 +5,7 @@
     background-image: url('../../Assets/Images/glass.png');
     background-size: 9px 9px;
 }
+
+header .responsive_nav {
+    transform: none;
+}

@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <div className='h-[600px] w-full relative overflow-hidden'>
 
-            <div className='absolute top-0 left-0 h-full w-full bg-[#000000ac]' />
+            <div className='absolute top-0 left-0 h-full w-full bg-[var(--secondary)]' />
             <video className='video' src={background} loop muted autoPlay />
 
             <div className='absolute w-full h-full top-0 text-white flex mx-16 mt-14'>
