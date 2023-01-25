@@ -10,9 +10,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1200px;
-    min-height: 100%;
-    /* max-height: 1920px; */
+    display: flex;
+    justify-content: center;
 }
 
 :root {

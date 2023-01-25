@@ -9,3 +9,378 @@
 .intro {
     font-family: 'Sofia Sans', sans-serif;
 }
+
+.banner-container {
+    height: 600px;
+}
+
+
+.intro-container {
+    margin-left: 60px;
+}
+
+.hello {
+    font-size: 32px;
+}
+
+.my-name {
+    font-size: 36px;
+    margin-top: 8px;
+}
+
+.intro-dec {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.intro-btn {
+    margin-top: 30px;
+}
+
+.intro-btn button {
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+}
+
+.intro-img {
+    height: 550px;
+}
+
+.intro-shape-one {
+    height: 550px;
+    width: 550px;
+}
+
+.intro-shape-tow {
+    height: 450px;
+    width: 450px;
+}
+
+.intro-shape-three {
+    height: 350px;
+    width: 350px;
+}
+
+.github {
+    bottom: 428px;
+    margin-left: 390px;
+}
+
+.linkedin {
+    bottom: 330px;
+    margin-left: 467px;
+}
+
+.facebook {
+    bottom: 205px;
+    margin-left: 478px;
+}
+
+.twitter {
+    bottom: 100px;
+    margin-left: 427px;
+}
+
+/* Media query for responsive */
+
+@media only screen and (max-width: 480px) {
+
+    .banner-container {
+        height: 700px;
+    }
+
+
+    .intro-container {
+        margin-left: 10px;
+    }
+
+    .hello {
+        font-size: 23px;
+    }
+
+    .my-name {
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    .intro-dec {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .intro-btn {
+        margin-top: 20px;
+    }
+
+    .intro-btn button {
+        height: 40px;
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .intro-img {
+        height: 400px;
+    }
+
+    .intro-shape-one {
+        height: 400px;
+        width: 400px;
+    }
+
+    .intro-shape-tow {
+        height: 300px;
+        width: 300px;
+    }
+
+    .intro-shape-three {
+        height: 200px;
+        width: 200px;
+    }
+
+    .github {
+        bottom: 300px;
+        margin-left: 260px;
+    }
+
+    .linkedin {
+        bottom: 250px;
+        margin-left: 310px;
+    }
+
+    .facebook {
+        bottom: 180px;
+        margin-left: 331px;
+    }
+
+    .twitter {
+        bottom: 100px;
+        margin-left: 312px;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .banner-container {
+        height: 750px;
+    }
+
+
+    .intro-container {
+        margin-left: 20px;
+    }
+
+    .hello {
+        font-size: 25px;
+    }
+
+    .my-name {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .intro-dec {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .intro-btn {
+        margin-top: 20px;
+    }
+
+    .intro-btn button {
+        height: 50px;
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .intro-img {
+        height: 450px;
+    }
+
+    .intro-shape-one {
+        height: 440px;
+        width: 440px;
+    }
+
+    .intro-shape-tow {
+        height: 340px;
+        width: 340px;
+    }
+
+    .intro-shape-three {
+        height: 240px;
+        width: 240px;
+    }
+
+    .github {
+        bottom: 340px;
+        margin-left: 285px;
+    }
+
+    .linkedin {
+        bottom: 278px;
+        margin-left: 347px;
+    }
+
+    .facebook {
+        bottom: 190px;
+        margin-left: 370px;
+    }
+
+    .twitter {
+        bottom: 100px;
+        margin-left: 343px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .banner-container {
+        height: 950px;
+    }
+
+
+    .intro-container {
+        margin-left: 30px;
+    }
+
+    .hello {
+        font-size: 32px;
+    }
+
+    .my-name {
+        font-size: 36px;
+        margin-top: 8px;
+    }
+
+    .intro-dec {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .intro-btn {
+        margin-top: 30px;
+    }
+
+    .intro-btn button {
+        height: 50px;
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .intro-img {
+        height: 600px;
+    }
+
+    .intro-shape-one {
+        height: 600px;
+        width: 600px;
+    }
+
+    .intro-shape-tow {
+        height: 500px;
+        width: 500px;
+    }
+
+    .intro-shape-three {
+        height: 400px;
+        width: 400px;
+    }
+
+    .github {
+        bottom: 470px;
+        margin-left: 435px;
+    }
+
+    .linkedin {
+        bottom: 358px;
+        margin-left: 517px;
+    }
+
+    .facebook {
+        bottom: 220px;
+        margin-left: 527px;
+    }
+
+    .twitter {
+        bottom: 100px;
+        margin-left: 463px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+
+    .banner-container {
+        height: 600px;
+    }
+
+
+    .intro-container {
+        margin-left: 60px;
+    }
+
+    .hello {
+        font-size: 32px;
+    }
+
+    .my-name {
+        font-size: 36px;
+        margin-top: 8px;
+    }
+
+    .intro-dec {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .intro-btn {
+        margin-top: 30px;
+    }
+
+    .intro-btn button {
+        height: 50px;
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .intro-img {
+        height: 550px;
+    }
+
+    .intro-shape-one {
+        height: 550px;
+        width: 550px;
+    }
+
+    .intro-shape-tow {
+        height: 450px;
+        width: 450px;
+    }
+
+    .intro-shape-three {
+        height: 350px;
+        width: 350px;
+    }
+
+    .github {
+        bottom: 428px;
+        margin-left: 390px;
+    }
+
+    .linkedin {
+        bottom: 330px;
+        margin-left: 467px;
+    }
+
+    .facebook {
+        bottom: 205px;
+        margin-left: 478px;
+    }
+
+    .twitter {
+        bottom: 100px;
+        margin-left: 427px;
+    }
+}

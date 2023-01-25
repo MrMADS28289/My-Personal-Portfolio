@@ -29,7 +29,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className={`flex justify-between items-center fixed top-0 left-0 px-16 py-6 duration-300 z-[1000] w-full max-w-[1200px] ${sticky} ${color} text-gray-300`}>
+        <header className={`nav-container flex justify-between items-center fixed top-0 py-6 duration-300 z-[1000] w-full max-w-[1230px] ${sticky} ${color} text-gray-300`}>
             <a href="#home" className='duration-75'>
                 <span className={`flex items-center gap-2 font-bold ${color} text-white text-4xl animate-pulse`}>
                     <SiWebmin /> Masum
@@ -67,7 +67,7 @@ const Navbar = () => {
 
             <div className='hidden lg:flex justify-center items-center'>
                 <button className={`flex items-center justify-center gap-2 h-[50px] w-[150px] text-white font-semibold border border-[#323548] rounded-full hover:bg-[#323548] duration-300`}>Hire Me <MdDoubleArrow /></button>
-                <div className='w-[30px] border-t border-[#323548]' />
+                <div className='w-[30px] mr-2 border-t border-[#323548]' />
             </div>
 
             <nav
@@ -90,21 +90,31 @@ const Navbar = () => {
                             <div className="collapse-title hover:bg-[#191c26] font-bold px-6 text-gray-400 hover:text-white">
                                 Pages
                             </div>
-                            <ul className="collapse-content mx-6">
+                            <ul className="collapse-content ml-2">
                                 <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                                    <a href='/'>About Me</a>
+                                    <a
+                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
+                                        href='/#'>About Me</a>
                                 </li>
                                 <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                                    <a href='/'>Projects</a>
+                                    <a
+                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
+                                        href='/#'>Projects</a>
                                 </li>
                                 <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                                    <a href='/'>Projects Details</a>
+                                    <a
+                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
+                                        href='/#'>Projects Details</a>
                                 </li>
                                 <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                                    <a href='/'>FAQ</a>
+                                    <a
+                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
+                                        href='/#'>FAQ</a>
                                 </li>
                                 <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                                    <a href='/'>404 Page</a>
+                                    <a
+                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
+                                        href='/#'>404 Page</a>
                                 </li>
                             </ul>
                         </div>
@@ -121,7 +131,7 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-            <button className="text-2xl text-white flex lg:hidden" onClick={showNavbar}>
+            <button className="text-2xl mr-5 text-white flex lg:hidden" onClick={showNavbar}>
                 <FaBars />
             </button>
         </header>
