@@ -50,8 +50,8 @@ const Navbar = () => {
                 <li className='nav-link'>
                     <div className="dropdown dropdown-hover">
                         <label tabIndex={0} className="text-gray-400 hover:text-white duration-300 cursor-pointer">Pages</label>
-                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 bg-[#000000d4] text-gray-300">
-                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>About Me</a></li>
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 bg-[var(--secondary)] text-gray-300">
+                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/#about'>About Me</a></li>
                             <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>Projects</a></li>
                             <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>Projects Details</a></li>
                             <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>FAQ</a></li>

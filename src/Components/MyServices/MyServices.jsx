@@ -15,7 +15,7 @@ const MyServices = () => {
             id='service'
             className='bg-[#2A2C39] pb-[100px]'>
 
-            <div className='section-intro text-white border-0'>
+            <div className='section-intro text-white'>
                 <h3 className='text-gray-400'>|| My Services</h3>
                 <h1 className='text-4xl mt-6'>Service Provide For My Clients.</h1>
             </div>

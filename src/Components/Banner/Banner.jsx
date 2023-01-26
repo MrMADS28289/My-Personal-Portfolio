@@ -12,7 +12,7 @@ const Banner = () => {
             id='home'
             className='banner-container w-full relative overflow-hidden'>
 
-            <div className='absolute top-0 left-0 h-full w-full bg-[#2a2c39da]' />
+            <div className='absolute top-0 left-0 h-full w-full bg-[#252734d8]' />
             <video className='video' src={background} loop muted autoPlay />
 
             <div className='intro-container absolute w-full h-full top-0 text-white flex-none lg:flex mt-14'>
