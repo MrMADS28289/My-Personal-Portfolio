@@ -1,0 +1,109 @@
+.slide-container {
+    width: 800px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.section-intro {
+    font-family: 'Sofia Sans', sans-serif;
+    padding: 100px 60px 0 60px;
+
+}
+
+.service {
+    height: 300px;
+    width: 300px;
+    padding: 20px 30px;
+}
+
+.service-icon {
+    font-size: 60px;
+    margin-bottom: 20px
+}
+
+.service-name {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Media query for responsive */
+
+@media only screen and (max-width: 480px) {
+
+    .section-intro {
+        padding: 80px 10px 0 10px;
+    }
+
+    .section-intro h1 {
+        font-size: 26px;
+    }
+
+    .slide-container {
+        width: 369px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    .section-intro {
+        padding: 80px 20px 0 20px;
+    }
+
+    .section-intro h1 {
+        font-size: 28px;
+    }
+
+    .slide-container {
+        width: 475px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .section-intro {
+        padding: 80px 30px 0 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 32px;
+    }
+
+    .slide-container {
+        width: 720px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+
+    .section-intro {
+        padding: 80px 60px 0 60px;
+    }
+
+    .section-intro h1 {
+        font-size: 36px;
+    }
+
+    .slide-container {
+        width: 900px;
+    }
+
+}

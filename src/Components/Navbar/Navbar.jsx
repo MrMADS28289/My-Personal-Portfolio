@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { RxCross1 } from 'react-icons/rx';
-import { MdDoubleArrow } from 'react-icons/md';
+import { RxCross1, RxDoubleArrowRight } from 'react-icons/rx';
 import { SiWebmin } from 'react-icons/si';
 import useScrollPosition from '../Hooks/useScrollPosition';
 import './Navbar.css';
@@ -29,7 +28,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className={`nav-container flex justify-between items-center fixed top-0 py-6 duration-300 z-[1000] w-full max-w-[1230px] ${sticky} ${color} text-gray-300`}>
+        <header className={`nav-container flex justify-between items-center fixed top-0 py-6 duration-300 z-[1000] w-full max-w-[1030px] ${sticky} ${color} text-gray-300`}>
             <a href="#home" className='duration-75'>
                 <span className={`flex items-center gap-2 font-bold ${color} text-white text-4xl animate-pulse`}>
                     <SiWebmin /> Masum
@@ -66,7 +65,7 @@ const Navbar = () => {
             </ul>
 
             <div className='hidden lg:flex justify-center items-center'>
-                <button className={`flex items-center justify-center gap-2 h-[50px] w-[150px] text-white font-semibold border border-[#323548] rounded-full hover:bg-[#323548] duration-300`}>Hire Me <MdDoubleArrow /></button>
+                <button className={`flex items-center justify-center gap-2 h-[50px] w-[150px] text-white text-sm font-semibold border border-[#323548] rounded-full hover:bg-[#323548] duration-300`}>Hire Me <RxDoubleArrowRight /></button>
                 <div className='w-[30px] mr-2 border-t border-[#323548]' />
             </div>
 

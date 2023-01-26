@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "service": "Front-end Development",
+        "icon": "BiCode",
+        "technology": [
+            "HTML/CSS",
+            "Animation",
+            "JavaScript",
+            "React.js"
+        ]
+    },
+    {
+        "id": 2,
+        "service": "Full-Stack Development",
+        "icon": "BiCodeAlt",
+        "technology": [
+            "The web development process includes: web content, client-side / server-side scripting and network security configuration."
+        ]
+    },
+    {
+        "id": 3,
+        "service": "Back-end Development",
+        "icon": "BiCodeCurly",
+        "technology": [
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ]
+    }
+]
