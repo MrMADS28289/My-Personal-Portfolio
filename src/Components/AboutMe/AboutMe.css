@@ -10,6 +10,26 @@
     font-family: 'Sofia Sans', sans-serif;
 }
 
+.about-slide-container {
+    display: flex;
+}
+
+.cards-swiper {
+    height: 240px !important;
+    width: 190px !important;
+}
+
+.card-slide {
+    height: 240px !important;
+    width: 190px !important;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.about-slide-p {
+    margin-left: 50px;
+}
+
 /* Media query for responsive */
 
 @media only screen and (max-width: 480px) {
@@ -21,6 +41,15 @@
     .info-point {
         width: 30px;
     }
+
+    .about-slide-container {
+        flex-direction: column;
+    }
+
+    .about-slide-p {
+        margin-top: 10px;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -30,6 +59,15 @@
 
     .info-point {
         width: 50px;
+    }
+
+    .about-slide-container {
+        flex-direction: column;
+    }
+
+    .about-slide-p {
+        margin-top: 20px;
+        margin-left: 0;
     }
 }
 

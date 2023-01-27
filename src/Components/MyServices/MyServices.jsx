@@ -1,9 +1,14 @@
 import React from 'react';
 import './MyServices.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import "./styles.css";
+
+// import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import { BiCode, BiCodeAlt, BiCodeCurly } from 'react-icons/bi';
 import { RxDoubleArrowRight } from 'react-icons/rx';
@@ -13,7 +18,7 @@ const MyServices = () => {
     return (
         <section
             id='service'
-            className='bg-[#2A2C39] pb-[100px]'>
+            className='bg-[#2A2C39] pb-[60px]'>
 
             <div className='section-intro text-white'>
                 <h3 className='text-gray-400'>|| My Services</h3>
@@ -25,6 +30,7 @@ const MyServices = () => {
                 <div className='slide-container'>
 
                     <Swiper
+                        id='swiper'
                         effect={"coverflow"}
                         grabCursor={false}
                         centeredSlides={true}
@@ -39,9 +45,9 @@ const MyServices = () => {
                         }}
                         pagination={true}
                         modules={[EffectCoverflow, Pagination]}
-                        className="mySwiper"
+                        className="coverflow-swiper"
                     >
-                        <SwiperSlide>
+                        <SwiperSlide className='coverflow-slide'>
                             <div className='service text-white bg-[#252734]'
                             >
                                 <BiCodeAlt className='service-icon' />
@@ -51,7 +57,7 @@ const MyServices = () => {
                             </div>
                         </SwiperSlide>
 
-                        <SwiperSlide>
+                        <SwiperSlide className='coverflow-slide'>
                             <div className='service text-white bg-[#252734]'
                             >
                                 <BiCode className='service-icon' />
@@ -66,7 +72,7 @@ const MyServices = () => {
                             </div>
                         </SwiperSlide>
 
-                        <SwiperSlide>
+                        <SwiperSlide className='coverflow-slide'>
                             <div className='service text-white bg-[#252734]'
                             >
                                 <BiCodeCurly className='service-icon' />
