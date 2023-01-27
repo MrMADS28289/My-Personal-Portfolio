@@ -1,0 +1,94 @@
+.experience-section {
+    height: 750px;
+    padding: 100px 60px 0 60px;
+}
+
+.experience-intro {
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience-swiper {
+    width: 500px !important;
+    height: 400px !important;
+    position: absolute !important;
+}
+
+.experience-slide {
+    background-color: #2A2C39;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 50px;
+}
+
+.experience-date {
+    margin-left: -30px;
+}
+
+.company {
+    font-size: 30px;
+}
+
+
+/* Media query for responsive */
+
+@media only screen and (max-width: 480px) {
+
+    .experience-section {
+        padding: 80px 10px 0 10px;
+    }
+
+    .experience-swiper {
+        width: 300px !important;
+        height: 400px !important;
+    }
+
+    .experience-slide {
+        padding: 30px;
+    }
+
+    .experience-date {
+        margin-left: -20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .experience-section {
+        padding: 80px 20px 0 20px;
+    }
+
+    .experience-swiper {
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    .experience-slide {
+        padding: 40px;
+    }
+
+    .experience-date {
+        margin-left: -25px;
+    }
+
+    .company {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .experience-section {
+        padding: 80px 30px 0 30px;
+    }
+
+    .company {
+        font-size: 28px;
+    }
+
+}
