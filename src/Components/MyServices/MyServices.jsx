@@ -18,7 +18,8 @@ const MyServices = () => {
     return (
         <section
             id='service'
-            className='bg-[#2A2C39] pb-[60px]'>
+            className='bg-[#2A2C39] pb-[60px]'
+        >
 
             <div className='section-intro text-white'>
                 <h3 className='text-gray-400'>|| My Services</h3>

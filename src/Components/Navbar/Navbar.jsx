@@ -28,7 +28,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className={`nav-container flex justify-between items-center fixed top-0 py-6 duration-300 z-[1000] w-full max-w-[1030px] ${sticky} ${color} text-gray-300`}>
+        <header className={`nav-container flex justify-between items-center fixed top-0 py-6 duration-300 z-[1000] w-full max-w-[1500px] ${sticky} ${color} text-gray-300`}>
             <a href="#home" className='duration-75'>
                 <span className={`flex items-center gap-2 font-bold ${color} text-white text-4xl animate-pulse`}>
                     <SiWebmin /> Masum

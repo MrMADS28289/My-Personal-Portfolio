@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Sofia Sans', sans-serif;
+    /* background-color: #252734; */
 }
 
 :root {
