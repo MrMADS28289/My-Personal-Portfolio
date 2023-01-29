@@ -4,6 +4,7 @@ import CodingSkil from './Components/CodingSkil/CodingSkil';
 import Experience from './Components/Experience/Experience';
 import MyServices from './Components/MyServices/MyServices';
 import Navbar from './Components/Navbar/Navbar';
+import Reviews from './Components/Reviews/Reviews';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MyServices />
       <Experience />
       <CodingSkil />
+      <Reviews />
     </div>
   );
 }
