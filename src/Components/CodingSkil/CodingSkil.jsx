@@ -31,7 +31,7 @@ class CodingSection extends Component {
             >
                 <div className='coding-skills-intro text-white'>
                     <h3 className='text-gray-400'>|| Developing On</h3>
-                    <h1 className='text-4xl mt-6'>Coding Skills.</h1>
+                    <h1 className='coding-section-intro mt-6'>Coding Skills.</h1>
                 </div>
 
                 <div className='skills-container mt-10'>

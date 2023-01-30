@@ -2,6 +2,10 @@
     width: 800px;
 }
 
+.service-section-intro {
+    font-size: 36px;
+}
+
 .coverflow-swiper {
     width: 100%;
     padding-top: 60px !important;
@@ -45,8 +49,8 @@
         padding: 80px 10px 0 10px;
     }
 
-    .section-intro h1 {
-        font-size: 26px;
+    .service-section-intro {
+        font-size: 22px;
     }
 
     .slide-container {

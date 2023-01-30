@@ -15,7 +15,7 @@ const Experience = () => {
         >
             <div className='experience-intro text-white'>
                 <h3 className='text-gray-400'>|| Working With</h3>
-                <h1 className='text-4xl my-6'>Experience.</h1>
+                <h1 className='experience-section-intro my-6'>Experience.</h1>
             </div>
 
             <div className='experience-slide-container flex justify-center mt-16'>

@@ -13,11 +13,11 @@ import client3 from '../../Assets/Images/clients/client3.jpg';
 const Reviews = () => {
     return (
         <section
-            className='reviews-section bg-[var(--primary)] text-white'
+            className='reviews-section bg-[#2A2C39] text-white'
         >
             <div className='reviews-intro text-white'>
                 <h3 className='text-gray-400'>|| What Customers Say</h3>
-                <h1 className='text-4xl my-6'>Reviews.</h1>
+                <h1 className='reviews-section-intro my-6'>Reviews.</h1>
             </div>
 
             <div className='reviews-slide-container flex justify-center py-6'>

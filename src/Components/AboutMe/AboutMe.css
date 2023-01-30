@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.about-section-intro {
+    font-size: 36px;
+}
+
 .my-info {
     font-family: 'Poppins', sans-serif;
 }
@@ -38,6 +42,10 @@
         width: 100%;
     }
 
+    .about-section-intro {
+        font-size: 22px;
+    }
+
     .info-point {
         width: 30px;
     }
@@ -55,6 +63,10 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .about-section {
         padding: 80px 20px 0 20px;
+    }
+
+    .about-section-intro {
+        font-size: 28px;
     }
 
     .info-point {

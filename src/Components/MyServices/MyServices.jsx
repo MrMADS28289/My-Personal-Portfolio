@@ -23,7 +23,7 @@ const MyServices = () => {
 
             <div className='section-intro text-white'>
                 <h3 className='text-gray-400'>|| My Services</h3>
-                <h1 className='text-4xl mt-6'>Service Provide For My Clients.</h1>
+                <h1 className='service-section-intro mt-6'>Service Provide For My Clients.</h1>
             </div>
 
             <div className='flex justify-center'>

@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.reviews-section-intro {
+    font-size: 36px;
+}
+
 .reviews-swiper {
     width: 850px;
     height: 400px;
@@ -17,7 +21,7 @@
     gap: 30px;
     background-position: center;
     background-size: cover;
-    background-color: #2A2C39;
+    background-color: var(--primary);
     width: 850px;
     height: 400px;
     padding: 50px;
@@ -30,6 +34,10 @@
 
     .reviews-section {
         padding: 60px 10px 0 10px;
+    }
+
+    .reviews-section-intro {
+        font-size: 22px;
     }
 
     .reviews-swiper {
@@ -50,6 +58,10 @@
 
     .reviews-section {
         padding: 80px 20px 0 20px;
+    }
+
+    .reviews-section-intro {
+        font-size: 28px;
     }
 
     .reviews-swiper {

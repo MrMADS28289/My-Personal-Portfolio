@@ -19,7 +19,7 @@ const AboutMe = () => {
             className='about-section bg-[var(--primary)] text-white'>
             <div className='about-intro text-white'>
                 <h3 className='text-gray-400'>|| My Story</h3>
-                <h1 className='text-4xl my-6'>About Me.</h1>
+                <h1 className='about-section-intro my-6'>About Me.</h1>
             </div>
             <div className='about-dec text-gray-300'>
                 <div className='about-slide-container'>
@@ -64,7 +64,7 @@ const AboutMe = () => {
                     <ul className='info-point mr-20'>
                         <li className='text-gray-400'>ADDRESS:</li>
                         <li className='text-gray-400'>PHONE:</li>
-                        <li className='text-gray-400'>E-MAIL:</li>
+                        <li className='text-gray-400'>EMAIL:</li>
                     </ul>
                     <ul>
                         <li>Jhenaidah</li>
