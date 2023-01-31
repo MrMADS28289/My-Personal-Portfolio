@@ -2,6 +2,7 @@ import AboutMe from './Components/AboutMe/AboutMe';
 import Banner from './Components/Banner/Banner';
 import CodingSkil from './Components/CodingSkil/CodingSkil';
 import Experience from './Components/Experience/Experience';
+import Footer from './Components/Footer/Footer';
 import MyServices from './Components/MyServices/MyServices';
 import Navbar from './Components/Navbar/Navbar';
 import Portfolio from './Components/Portfolio/Portfolio';
@@ -18,6 +19,7 @@ function App() {
       <CodingSkil />
       <Portfolio />
       <Reviews />
+      <Footer />
     </div>
   );
 }

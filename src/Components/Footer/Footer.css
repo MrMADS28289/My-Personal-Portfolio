@@ -1,0 +1,179 @@
+.footer-section {
+    padding: 100px 60px 60px 60px;
+}
+
+.footer-intro {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-section-intro {
+    font-size: 36px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.news-letter-input {
+    width: 500px;
+}
+
+.news-letter-btn {
+    height: 50px;
+    width: 160px;
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.developer-credit {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.phone-icon {
+    padding: 16px;
+}
+
+.email-icon {
+    padding: 16px;
+}
+
+/* Media query for responsive */
+
+@media only screen and (max-width: 480px) {
+
+    .footer-section {
+        padding: 60px 10px 20px 10px;
+    }
+
+    .footer-section-intro {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .news-letter-input {
+        width: 230px;
+        height: 30px;
+    }
+
+    .news-letter-btn {
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .developer-credit {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .phone-icon {
+        padding: 8px;
+    }
+
+    .email-anc {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .email-icon {
+        padding: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .footer-section {
+        padding: 60px 20px 40px 20px;
+    }
+
+    .footer-section-intro {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .news-letter-input {
+        width: 280px;
+        height: 40px;
+    }
+
+    .news-letter-btn {
+        height: 40px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+
+    .developer-credit {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .phone-icon {
+        padding: 8px;
+    }
+
+    .email-anc {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .email-icon {
+        padding: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+    .footer-section {
+        padding: 80px 30px 60px 30px;
+    }
+
+    .news-letter-input {
+        width: 500px;
+        height: 50px;
+    }
+
+    .news-letter-btn {
+        height: 50px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+
+    .developer-credit {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .phone-icon {
+        padding: 10px;
+    }
+
+    .email-anc {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .email-icon {
+        padding: 10px;
+    }
+
+}

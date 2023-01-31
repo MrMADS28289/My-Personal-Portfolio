@@ -27,14 +27,14 @@ class CodingSection extends Component {
 
         return (
             <section
-                className='conding-skills-section bg-[#2A2C39] pb-[60px]'
+                className={`${enterCount ? 'conding-skills-section' : ''} bg-[#2A2C39] pb-[60px]`}
             >
                 <div className='coding-skills-intro text-white'>
                     <h3 className='text-gray-400'>|| Developing On</h3>
                     <h1 className='coding-section-intro mt-6'>Coding Skills.</h1>
                 </div>
 
-                <div className='skills-container mt-10'>
+                <div className={`${!enterCount ? 'hidden' : ''} skills-container mt-10`}>
 
                     <div className='card'>
                         <div className={`${enterCount ? 'percent' : ''}`} style={{ "--clr": "#fff", "--num": 95 }}

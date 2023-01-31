@@ -13,7 +13,7 @@ import client3 from '../../Assets/Images/clients/client3.jpg';
 const Reviews = () => {
     return (
         <section
-            className='reviews-section bg-[#2A2C39] text-white'
+            className='reviews-section bg-[#2A2C39] text-white pb-10'
         >
             <div className='reviews-intro text-white'>
                 <h3 className='text-gray-400'>|| What Customers Say</h3>
@@ -44,7 +44,7 @@ const Reviews = () => {
                             </div>
 
                             <div className='flex mt-6'>
-                                <span className='text-4xl text-gray-500 mr-6'>"</span>
+                                <span className='text-4xl text-gray-500 mr-6'>“</span>
                                 <p className='text-gray-300 text-sm mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum libero exercitationem ea qui explicabo? Sapiente error reprehenderit non alias aliquam, cumque fugit magni soluta autem rem eaque corrupti sint.</p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const Reviews = () => {
                             </div>
 
                             <div className='flex mt-6'>
-                                <span className='text-4xl text-gray-500 mr-6'>"</span>
+                                <span className='text-4xl text-gray-500 mr-6'>“</span>
                                 <p className='text-gray-300 text-sm mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum libero exercitationem ea qui explicabo? Sapiente error reprehenderit non alias aliquam, cumque fugit magni soluta autem rem eaque corrupti sint.</p>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ const Reviews = () => {
                             </div>
 
                             <div className='flex mt-6'>
-                                <span className='text-4xl text-gray-500 mr-6'>"</span>
+                                <span className='text-4xl text-gray-500 mr-6'>“</span>
                                 <p className='text-gray-300 text-sm mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum libero exercitationem ea qui explicabo? Sapiente error reprehenderit non alias aliquam, cumque fugit magni soluta autem rem eaque corrupti sint.</p>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ const Reviews = () => {
                             </div>
 
                             <div className='flex mt-6'>
-                                <span className='text-4xl text-gray-500 mr-6'>"</span>
+                                <span className='text-4xl text-gray-500 mr-6'>“</span>
                                 <p className='text-gray-300 text-sm mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum libero exercitationem ea qui explicabo? Sapiente error reprehenderit non alias aliquam, cumque fugit magni soluta autem rem eaque corrupti sint.</p>
                             </div>
                         </div>
