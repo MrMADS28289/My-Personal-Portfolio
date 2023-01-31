@@ -132,6 +132,54 @@ class CodingSection extends Component {
 
                     </div>
 
+                    <div className='card'>
+                        <div className={`${enterCount ? 'percent' : ''}`} style={{ "--clr": "#fff", "--num": 20 }}
+                        >
+                            <div className={`${enterCount ? 'dot' : ''}`}></div>
+                            <svg>
+                                <circle cx='70' cy='70' r='70'></circle>
+                                <circle cx='70' cy='70' r='70'></circle>
+                            </svg>
+                            <div className={`${enterCount ? 'number' : ''}`}>
+                                <h2>20 %</h2>
+                            </div>
+                        </div>
+                        <h1 className='text-2xl my-4 uppercase text-gray-300'>TypeScript</h1>
+
+                    </div>
+
+                    <div className='card'>
+                        <div className={`${enterCount ? 'percent' : ''}`} style={{ "--clr": "#fff", "--num": 30 }}
+                        >
+                            <div className={`${enterCount ? 'dot' : ''}`}></div>
+                            <svg>
+                                <circle cx='70' cy='70' r='70'></circle>
+                                <circle cx='70' cy='70' r='70'></circle>
+                            </svg>
+                            <div className={`${enterCount ? 'number' : ''}`}>
+                                <h2>30 %</h2>
+                            </div>
+                        </div>
+                        <h1 className='text-2xl my-4 uppercase text-gray-300'>Redux</h1>
+
+                    </div>
+
+                    <div className='card'>
+                        <div className={`${enterCount ? 'percent' : ''}`} style={{ "--clr": "#fff", "--num": 25 }}
+                        >
+                            <div className={`${enterCount ? 'dot' : ''}`}></div>
+                            <svg>
+                                <circle cx='70' cy='70' r='70'></circle>
+                                <circle cx='70' cy='70' r='70'></circle>
+                            </svg>
+                            <div className={`${enterCount ? 'number' : ''}`}>
+                                <h2>25 %</h2>
+                            </div>
+                        </div>
+                        <h1 className='text-2xl my-4 uppercase text-gray-300'>React Native</h1>
+
+                    </div>
+
                 </div>
             </section>
         );

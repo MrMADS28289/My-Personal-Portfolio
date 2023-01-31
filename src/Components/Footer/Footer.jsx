@@ -13,7 +13,7 @@ const Footer = () => {
 
     return (
         <section
-            className='relative overflow-hidden bg-[var(--primary)] text-white'
+            className='relative overflow-hidden bg-[var(--secondary)] text-white'
         >
             <div className='footer-section'>
                 <div className='h-[600px] w-[600px] z-[1] border border-gray-700 rounded-full absolute top-[-400px] left-[-400px]' />
@@ -80,7 +80,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='developer-credit flex justify-between border-t border-gray-600 py-6 text-sm'>
+            <div className='bg-[var(--primary)] developer-credit flex justify-between border-t border-gray-600 py-6 text-sm'>
                 <p className='flex items-center gap-1 text-gray-400 order-2'><BiCopyright /> {date.getFullYear()} <span className='flex items-center gap-1' ><span className='text-white'>Masum</span> Made with <BsHeartFill className='text-white' /> by <span className='text-white'>Masum Abduss Sobhan</span>.</span></p>
                 <a href="#home" className='duration-75'>
                     <span className='flex items-center gap-2 font-bold  text-white text-4xl animate-pulse order-1'>
