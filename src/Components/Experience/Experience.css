@@ -35,7 +35,36 @@
 
 /* Media query for responsive */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 374px) {
+
+    .experience-section {
+        padding: 40px 10px 0 10px;
+    }
+
+    .experience-section-intro {
+        font-size: 20px;
+    }
+
+    .experience-swiper {
+        width: 250px !important;
+        height: 400px !important;
+    }
+
+    .experience-slide {
+        padding: 10px;
+    }
+
+    .experience-date {
+        margin-left: -20px;
+    }
+
+    .company {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
 
     .experience-section {
         padding: 80px 10px 0 10px;
@@ -96,7 +125,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     .experience-section {
-        padding: 80px 60px 0 60px;
+        padding: 80px 30px 0 30px;
     }
 
     .company {

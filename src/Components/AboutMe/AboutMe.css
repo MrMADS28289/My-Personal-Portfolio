@@ -35,8 +35,45 @@
 }
 
 /* Media query for responsive */
+@media only screen and (max-width: 374px) {
 
-@media only screen and (max-width: 480px) {
+    .about-section {
+        padding: 40px 10px 0 10px;
+        width: 100%;
+    }
+
+    .about-section-intro {
+        font-size: 20px;
+    }
+
+    .my-info {
+        width: 20px;
+        font-size: 8px;
+    }
+
+    .about-slide-container {
+        flex-direction: column;
+    }
+
+    .cards-swiper {
+        height: 140px !important;
+        width: 100px !important;
+    }
+
+    .card-slide {
+        height: 140px !important;
+        width: 100px !important;
+    }
+
+    .about-slide-p {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+
     .about-section {
         padding: 80px 10px 0 10px;
         width: 100%;
@@ -58,6 +95,7 @@
         margin-top: 10px;
         margin-left: 0;
     }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -93,7 +131,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
     .about-section {
         padding: 100px 60px 0 60px;
     }

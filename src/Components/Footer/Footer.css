@@ -41,7 +41,54 @@
 
 /* Media query for responsive */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 374px) {
+
+    .footer-section {
+        padding: 40px 10px 20px 10px;
+    }
+
+    .footer-section-intro {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .news-letter-input {
+        width: 150px;
+        height: 20px;
+    }
+
+    .news-letter-btn {
+        height: 20px;
+        width: 50px;
+        font-size: 5px;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .developer-credit {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .phone-icon {
+        padding: 5px;
+    }
+
+    .email-anc {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .email-icon {
+        padding: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
 
     .footer-section {
         padding: 60px 10px 20px 10px;
@@ -136,7 +183,7 @@
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     .footer-section {
         padding: 80px 30px 60px 30px;

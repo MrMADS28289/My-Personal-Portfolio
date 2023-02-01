@@ -83,8 +83,83 @@
 }
 
 /* Media query for responsive */
+@media only screen and (max-width: 374px) {
 
-@media only screen and (max-width: 480px) {
+    .banner-container {
+        height: 600px;
+    }
+
+
+    .intro-container {
+        margin-left: 10px;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .my-name {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    .intro-dec {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .intro-btn {
+        margin-top: 20px;
+    }
+
+    .intro-btn button {
+        height: 40px;
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .intro-img {
+        height: 300px;
+    }
+
+    .intro-shape-one {
+        height: 300px;
+        width: 300px;
+    }
+
+    .intro-shape-tow {
+        height: 200px;
+        width: 200px;
+    }
+
+    .intro-shape-three {
+        height: 100px;
+        width: 100px;
+    }
+
+    .github {
+        bottom: 210px;
+        margin-left: 175px;
+    }
+
+    .linkedin {
+        bottom: 180px;
+        margin-left: 215px;
+    }
+
+    .facebook {
+        bottom: 130px;
+        margin-left: 231px;
+    }
+
+    .twitter {
+        bottom: 70px;
+        margin-left: 215px;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
 
     .banner-container {
         height: 700px;
@@ -157,6 +232,7 @@
         bottom: 100px;
         margin-left: 312px;
     }
+
 }
 
 
@@ -310,7 +386,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
 
     .banner-container {
         height: 600px;
