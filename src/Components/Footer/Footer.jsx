@@ -25,8 +25,8 @@ const Footer = () => {
 
 
                 <div className='footer-intro text-white text-center'>
-                    <h3 className='text-gray-400'>|| Get Latest Updates</h3>
-                    <h1 className='footer-section-intro'>Subscribe For Newsletter</h1>
+                    <h3 className='text-gray-400 z-20'>|| Get Latest Updates</h3>
+                    <h1 className='footer-section-intro z-20'>Subscribe For Newsletter</h1>
 
                     <form className='flex justify-center py-10 gap-6' action="" >
                         <input

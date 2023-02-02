@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
-// import emailjs from 'emailjs-com'
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
-    // const form = useRef();
+    const form = useRef();
 
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
+    const sendEmail = (e) => {
 
-    //     emailjs.sendForm('service_w1kk0y5', 'template_5ub3fgd', form.current, 'vw3RhUyXqF_NMoCFu')
-    //         .then((result) => {
-    //         }, (error) => {
-    //             toast.error(error.text);
-    //         });
-    //     toast.success('Eamil sent success.');
-    //     e.target.reset();
-    // };
+        e.preventDefault();
+
+        emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLETE_ID, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
+            .then((result) => {
+                if (result.status) {
+                    toast.success('Eamil sent success.');
+                    e.target.reset();
+                };
+
+            }, (error) => {
+                toast.error('Something went wrong.');
+            });
+
+    };
 
     return (
         <section
@@ -31,7 +36,10 @@ const Contact = () => {
             </div>
 
             <div className="message-container gap-10 mt-14">
-                <form className='contact-form flex flex-col mx-auto'>
+                <form
+                    ref={form}
+                    onSubmit={sendEmail}
+                    className='contact-form flex flex-col mx-auto'>
 
                     <div className='relative text-white'>
                         <p className='uppercase p-2 absolute top-[-14px] left-[37px] text-xs bg-[var(--primary)]'>Full Name <span className='text-gray-400 ml-1'>*</span></p>
@@ -100,7 +108,7 @@ const Contact = () => {
                     <h2 className='signature text-white text-center text-3xl mt-5'>Mr. Mads</h2>
 
                 </div>
-
+                <ToastContainer />
             </div>
         </section>
     );
