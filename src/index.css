@@ -6,10 +6,21 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
     display: flex;
     justify-content: center;
     font-family: 'Sofia Sans', sans-serif;

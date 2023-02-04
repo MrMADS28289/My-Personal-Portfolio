@@ -39,23 +39,20 @@ const Navbar = () => {
             <ul className='hidden lg:flex gap-7 font-bold'>
                 <li className='nav-link'>
                     <Link
-                        to="/home#home"
+                        to="/"
                         className='text-gray-400 hover:text-white duration-300'
                     >Home</Link>
                 </li>
 
                 <li className='nav-link'>
-                    <Link
+                    <a
                         className='text-gray-400 hover:text-white duration-300'
-                        to="#service"
-                    >Service</Link>
+                        href="#service"
+                    >Service</a>
                 </li>
 
                 <li className='nav-link'>
-                    <Link
-                        to="/blogs"
-                        className='text-gray-400 hover:text-white duration-300'
-                    >Blog</Link>
+                    <a className='text-gray-400 hover:text-white duration-300' href="#contact">Contact</a>
                 </li>
 
                 <li className='nav-link'>
@@ -72,22 +69,22 @@ const Navbar = () => {
                         >
                             <li
                                 className='text-gray-300 hover:text-white hover:bg-[#252734]'
-                            ><a href='/#about'>About Me</a>
+                            ><a href='#about'>About Me</a>
                             </li>
 
                             <li
                                 className='text-gray-300 hover:text-white hover:bg-[#252734]'
-                            ><a href='/'>Projects</a>
+                            ><a href='#experience'>Experience</a>
                             </li>
 
                             <li
                                 className='text-gray-300 hover:text-white hover:bg-[#252734]'
-                            >   <a href='/'>Projects Details</a>
+                            ><a href='#skills'>Coding Skills</a>
                             </li>
 
                             <li
-                                className='text-gray-300 hover:text-white hover:bg-[#252734]'>
-                                <a href='/'>FAQ</a>
+                                className='text-gray-300 hover:text-white hover:bg-[#252734]'
+                            ><Link to="/blogs">Blog</Link>
                             </li>
 
                             <li
@@ -99,7 +96,9 @@ const Navbar = () => {
                 </li>
 
                 <li className='nav-link'>
-                    <a className='text-gray-400 hover:text-white duration-300' href="#contact">Contact</a>
+                    <a
+                        className='text-gray-400 hover:text-white duration-300'
+                        href='#projects'>Projects</a>
                 </li>
             </ul>
 
@@ -113,7 +112,7 @@ const Navbar = () => {
             </div>
 
             <nav
-                className='flex justify-end lg:hidden fixed top-0 right-0 h-full w-full bg-[#00000086] duration-[0.5s] translate-x-full w z-[3000]'
+                className='flex justify-end lg:hidden fixed top-0 right-0 h-full w-full bg-[#00000086] duration-[0.5s] translate-x-full w z-[4000]'
                 ref={navRef}>
 
                 <ul className='relative w-[60%] bg-[var(--primary)] pt-20 font-bold'
@@ -121,7 +120,7 @@ const Navbar = () => {
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
                         <Link
                             className='duration-300'
-                            to="/home">Home</Link>
+                            to="/">Home</Link>
                     </li>
 
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
@@ -129,61 +128,48 @@ const Navbar = () => {
                     </li>
 
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                        <Link className='duration-300' to="/blogs">Blogs</Link>
+                        <a href='#contact' className='duration-300' to="/blogs">Contact</a>
                     </li>
 
-                    <li className='cursor-pointer'>
+                    <li className='cursor-pointer font-bold px-2 text-gray-400 hover:text-white'>
 
                         <div
                             tabIndex={0}
-                            className="collapse collapse-arrow"
+                            className="collapse"
                         >
-                            <div className="collapse-title hover:bg-[#191c26] font-bold px-6 text-gray-400 hover:text-white">
+                            <input type="checkbox" />
+
+                            <div className="collapse-title">
                                 Pages
                             </div>
 
-                            <ul className="collapse-content ml-2">
+                            <ul className="collapse-content ml-2 flex flex-col">
+                                <a
+                                    className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer  px-6 py-2'
+                                    href='#about'>About Me</a>
 
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                                    <a
-                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
-                                        href='/#'>About Me</a>
-                                </li>
+                                <a
+                                    className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                    href='#experience'>Experience</a>
 
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
-                                >
-                                    <a
-                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
-                                        href='/#'>Projects</a>
-                                </li>
+                                <a
+                                    className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                    href='#skills'>Skills</a>
 
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
-                                >
-                                    <a
-                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
-                                        href='/#'>Projects Details</a>
-                                </li>
+                                <Link
+                                    className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                    to='/blogs'>Blog</Link>
 
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
-                                >
-                                    <a
-                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
-                                        href='/#'>FAQ</a>
-                                </li>
-
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
-                                >
-                                    <a
-                                        className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
-                                        href='/notfound'>404 Page</a>
-                                </li>
+                                <Link
+                                    className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                    to='/notfound'>404 Page</Link>
 
                             </ul>
                         </div>
                     </li>
 
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                        <a className='duration-300' href="#contact">Contact</a>
+                        <a className='duration-300' href="#projects">Projects</a>
                     </li>
 
                     <button
@@ -197,6 +183,7 @@ const Navbar = () => {
             <button className="text-2xl mr-5 text-white flex lg:hidden" onClick={showNavbar}>
                 <FaBars />
             </button>
+
         </header>
     );
 };

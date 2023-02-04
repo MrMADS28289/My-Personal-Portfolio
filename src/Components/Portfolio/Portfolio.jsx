@@ -16,6 +16,7 @@ import project from '../../Assets/Images/project.jpg';
 const Portfolio = () => {
     return (
         <section
+            id='projects'
             className='portfolio-section bg-[var(--primary)] text-white'
         >
             <div className='portfolio-intro text-white'>

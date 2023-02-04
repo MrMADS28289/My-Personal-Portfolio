@@ -27,6 +27,7 @@ class CodingSection extends Component {
 
         return (
             <section
+                id='skills'
                 className={`${enterCount ? 'conding-skills-section' : ''} bg-[#2A2C39] pb-[60px]`}
             >
                 <div className='coding-skills-intro text-white'>
