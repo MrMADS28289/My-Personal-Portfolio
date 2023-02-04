@@ -54,20 +54,20 @@
     }
 
     .slide-container {
-        width: 220px;
+        width: 260px;
     }
 
     .coverflow-swiper {
-        width: 200px;
+        width: 260px;
     }
 
     .coverflow-slide {
-        width: 180px !important;
+        width: 200px !important;
         height: 280px !important;
     }
 
     .service {
-        width: 180px;
+        width: 200px;
         height: 280px;
         padding: 10px 20px;
     }

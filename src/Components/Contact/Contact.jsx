@@ -78,7 +78,7 @@ const Contact = () => {
                     >Send Message</button>
                 </form>
 
-                <div className='contact-form p-10 border border-gray-600 rounded-3xl mx-auto'>
+                <div className='contact-form border border-gray-600 rounded-3xl mx-auto'>
 
                     <div className='mb-10'>
                         <h1 className='text-3xl text-white'>Masum Abduss Sobhan</h1>

@@ -47,7 +47,7 @@ const AboutMe = () => {
                 <p className='text-gray-400'>If you're looking for a talented and ambitious MERN stack developer, look no further than me, Masum Abduss Sobhan.</p>
             </div>
 
-            <div className='my-info md:flex justify-between py-[80px]'>
+            <div className='my-info md:flex justify-between'>
                 <ul className='flex'>
                     <ul className='info-point mr-20'>
                         <li className='text-gray-400'>AGE:</li>

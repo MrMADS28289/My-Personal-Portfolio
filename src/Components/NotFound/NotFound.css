@@ -1,0 +1,10 @@
+.notfound-container {
+    margin-top: 80px;
+    width: 800px;
+}
+
+.notfound {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+}

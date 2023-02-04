@@ -4,6 +4,7 @@ import { RxCross1, RxDoubleArrowRight } from 'react-icons/rx';
 import { SiWebmin } from 'react-icons/si';
 import useScrollPosition from '../Hooks/useScrollPosition';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -37,87 +38,150 @@ const Navbar = () => {
 
             <ul className='hidden lg:flex gap-7 font-bold'>
                 <li className='nav-link'>
-                    <a
+                    <Link
+                        to="/home#home"
                         className='text-gray-400 hover:text-white duration-300'
-                        href="#home">Home</a>
+                    >Home</Link>
                 </li>
+
                 <li className='nav-link'>
-                    <a className='text-gray-400 hover:text-white duration-300' href="#service">Service</a>
+                    <Link
+                        className='text-gray-400 hover:text-white duration-300'
+                        to="#service"
+                    >Service</Link>
                 </li>
+
                 <li className='nav-link'>
-                    <a className='text-gray-400 hover:text-white duration-300' href="#blog">Blog</a>
+                    <Link
+                        to="/blogs"
+                        className='text-gray-400 hover:text-white duration-300'
+                    >Blog</Link>
                 </li>
+
                 <li className='nav-link'>
                     <div className="dropdown dropdown-hover">
-                        <label tabIndex={0} className="text-gray-400 hover:text-white duration-300 cursor-pointer">Pages</label>
-                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 bg-[var(--secondary)] text-gray-300">
-                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/#about'>About Me</a></li>
-                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>Projects</a></li>
-                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>Projects Details</a></li>
-                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>FAQ</a></li>
-                            <li className='text-gray-300 hover:text-white hover:bg-[#252734]'><a href='/'>404 Page</a></li>
+
+                        <label
+                            tabIndex={0}
+                            className="text-gray-400 hover:text-white duration-300 cursor-pointer"
+                        >Pages</label>
+
+                        <ul
+                            tabIndex={0}
+                            className="dropdown-content menu p-2 shadow rounded-box w-52 bg-[#2A2C39] text-gray-300"
+                        >
+                            <li
+                                className='text-gray-300 hover:text-white hover:bg-[#252734]'
+                            ><a href='/#about'>About Me</a>
+                            </li>
+
+                            <li
+                                className='text-gray-300 hover:text-white hover:bg-[#252734]'
+                            ><a href='/'>Projects</a>
+                            </li>
+
+                            <li
+                                className='text-gray-300 hover:text-white hover:bg-[#252734]'
+                            >   <a href='/'>Projects Details</a>
+                            </li>
+
+                            <li
+                                className='text-gray-300 hover:text-white hover:bg-[#252734]'>
+                                <a href='/'>FAQ</a>
+                            </li>
+
+                            <li
+                                className='text-gray-300 hover:text-white hover:bg-[#252734]'
+                            ><Link to='/notfound'>404 Page</Link>
+                            </li>
                         </ul>
                     </div>
                 </li>
+
                 <li className='nav-link'>
                     <a className='text-gray-400 hover:text-white duration-300' href="#contact">Contact</a>
                 </li>
             </ul>
 
             <div className='hidden lg:flex justify-center items-center'>
-                <button className={`flex items-center justify-center gap-2 h-[50px] w-[150px] text-white text-sm font-semibold border border-[#323548] rounded-full hover:bg-[#323548] duration-300`}>Hire Me <RxDoubleArrowRight /></button>
+
+                <button
+                    className={`flex items-center justify-center gap-2 h-[50px] w-[150px] text-white text-sm font-semibold border border-[#323548] rounded-full hover:bg-[#323548] duration-300`}
+                >Hire Me <RxDoubleArrowRight /></button>
+
                 <div className='w-[30px] mr-2 border-t border-[#323548]' />
             </div>
 
             <nav
                 className='flex justify-end lg:hidden fixed top-0 right-0 h-full w-full bg-[#00000086] duration-[0.5s] translate-x-full w z-[3000]'
                 ref={navRef}>
-                <ul className='relative w-[60%] bg-[var(--primary)] pt-20 font-bold'>
+
+                <ul className='relative w-[60%] bg-[var(--primary)] pt-20 font-bold'
+                >
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                        <a
+                        <Link
                             className='duration-300'
-                            href="#home">Home</a>
+                            to="/home">Home</Link>
                     </li>
+
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
                         <a className='duration-300' href="#service">Service</a>
                     </li>
+
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
-                        <a className='duration-300' href="#blog">Blog</a>
+                        <Link className='duration-300' to="/blogs">Blogs</Link>
                     </li>
+
                     <li className='cursor-pointer'>
-                        <div tabIndex={0} className="collapse collapse-arrow">
+
+                        <div
+                            tabIndex={0}
+                            className="collapse collapse-arrow"
+                        >
                             <div className="collapse-title hover:bg-[#191c26] font-bold px-6 text-gray-400 hover:text-white">
                                 Pages
                             </div>
+
                             <ul className="collapse-content ml-2">
+
                                 <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
                                     <a
                                         className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
                                         href='/#'>About Me</a>
                                 </li>
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
+
+                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                >
                                     <a
                                         className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
                                         href='/#'>Projects</a>
                                 </li>
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
+
+                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                >
                                     <a
                                         className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
                                         href='/#'>Projects Details</a>
                                 </li>
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
+
+                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                >
                                     <a
                                         className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
                                         href='/#'>FAQ</a>
                                 </li>
-                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
+
+                                <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'
+                                >
                                     <a
                                         className='w-full hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer'
-                                        href='/#'>404 Page</a>
+                                        href='/notfound'>404 Page</a>
                                 </li>
+
                             </ul>
                         </div>
                     </li>
+
                     <li className='hover:bg-[#191c26] text-gray-400 hover:text-white cursor-pointer px-6 py-2'>
                         <a className='duration-300' href="#contact">Contact</a>
                     </li>

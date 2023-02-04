@@ -12,6 +12,8 @@
 
 .my-info {
     font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .about-slide-container {
@@ -49,6 +51,8 @@
     .my-info {
         width: 20px;
         font-size: 8px;
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
 
     .about-slide-container {

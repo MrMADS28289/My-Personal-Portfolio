@@ -17,6 +17,7 @@
 
 .contact-form {
     width: 100%;
+    padding: 40px;
 }
 
 .signature {
@@ -42,6 +43,7 @@
     .contact-form {
         width: 250px;
         overflow: hidden;
+        padding: 10px;
     }
 
 }

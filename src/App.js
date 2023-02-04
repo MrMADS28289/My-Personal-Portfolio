@@ -1,15 +1,59 @@
-
-import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
-import Footer from './Components/Footer/Footer';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Main from './Layout/Main/Main';
+import Blogs from './Components/Blogs/Blogs';
+import NotFound from './Components/NotFound/NotFound';
+import ReactLoading from 'react-loading';
+import { useState } from 'react';
 
 function App() {
+
+  const [loadingTime, setLoadingTime] = useState(true);
+
+  setTimeout(() => {
+    setLoadingTime(false);
+  }, 3000)
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main />,
+      children: [
+        {
+          path: '/', element: <Home />
+        },
+
+        {
+          path: 'home', element: <Home />
+        },
+
+        {
+          path: 'blogs', element: <Blogs />
+        },
+
+        {
+          path: '*', element: <NotFound />
+        }
+      ]
+    },
+  ])
+
   return (
-    <div className='max-w-[1500px]'>
-      <Navbar />
-      <Home />
-      <Footer />
-    </div>
+    <>
+      {
+        !loadingTime ? <RouterProvider router={router} /> :
+          <ReactLoading
+            className='flex justify-center items-center'
+            type={"bars"}
+            color={"#fff"}
+            height={'100vh'}
+            width={100}
+          />
+      }
+    </>
   );
 }
 
