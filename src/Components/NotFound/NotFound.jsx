@@ -10,7 +10,7 @@ const NotFound = () => {
             className='notfound-container bg-[var(--primary)]'
         >
             <div className='flex flex-col justify-center items-center'>
-                <h1 className='mt-16 text-5xl text-white'>Page Not Found</h1>
+                <h1 className='notfound-intro text-white'>Page Not Found</h1>
                 <div className='h-[50px] w-[160px] px-5 mt-6 mb-10 border border-[#323548] rounded-full bg-[var(--primary)] text-white flex justify-between items-center'>
                     <Link
                         to='/'
@@ -18,19 +18,19 @@ const NotFound = () => {
                 </div>
             </div>
 
-            <div className='notfound mb-16 text-white bg-[var(--secondary)]'>
+            <div className='notfound mb-16 mx-auto text-white bg-[var(--secondary)]'>
 
-                <div>
+                <div className='order-2 md:order-1'>
                     <h1 className='text-4xl mb-2'>Sorry!</h1>
                     <h3 className='text-2xl mb-6'>This Page is Not Found.</h3>
                     <p className='text-gray-400 mb-6'>I think you lost in space, Or an unknown page. But Don't worry! you can go back to home page. Just click back to home. Thank you!</p>
                     <Link
                         to='/'
-                        className='flex items-center justify-center gap-2 h-[50px] w-[130px] text-white text-xs border border-[#323548] rounded-full bg-transparent hover:bg-[var(--primary)] duration-300'><RxDoubleArrowLeft
+                        className='flex items-center justify-center gap-2 h-[50px] w-[160px] text-white text-xs border border-[#323548] rounded-full bg-transparent hover:bg-[var(--primary)] duration-300'><RxDoubleArrowLeft
                         /> Back To Home</Link>
                 </div>
 
-                <img src={notfound} alt="" />
+                <img className='order-1 md:order-2' src={notfound} alt="" />
             </div>
         </div>
     );

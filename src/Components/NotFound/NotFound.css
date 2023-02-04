@@ -1,10 +1,56 @@
 .notfound-container {
     margin-top: 80px;
-    width: 800px;
+    width: 100%;
 }
 
 .notfound {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 60px;
+}
+
+.notfound-intro {
+    font-size: 48px;
+}
+
+/* Media query for responsive */
+@media only screen and (max-width: 374px) {
+
+    .notfound {
+        width: 240px;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .notfound-intro {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+
+    .notfound {
+        width: 350px;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .notfound-intro {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .notfound {
+        width: 450px;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .notfound-intro {
+        font-size: 22px;
+    }
+
 }
