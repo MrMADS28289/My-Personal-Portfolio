@@ -104,9 +104,10 @@ const Navbar = () => {
 
             <div className='hidden lg:flex justify-center items-center'>
 
-                <button
+                <a
+                    href='#contact'
                     className={`flex items-center justify-center gap-2 h-[50px] w-[150px] text-white text-sm font-semibold border border-[#323548] rounded-full hover:bg-[#323548] duration-300`}
-                >Hire Me <RxDoubleArrowRight /></button>
+                >Hire Me <RxDoubleArrowRight /></a>
 
                 <div className='w-[30px] mr-2 border-t border-[#323548]' />
             </div>

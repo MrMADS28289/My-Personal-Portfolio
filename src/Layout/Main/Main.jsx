@@ -1,16 +1,20 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Footer from '../../Components/Footer/Footer';
-import HomeButton from '../../Components/HomeButton/HomeButton';
-import Navbar from '../../Components/Navbar/Navbar';
+import Bannner from '../../Components/Banner2/Bannner';
+// import { Outlet } from 'react-router-dom';
+// import Footer from '../../Components/Footer/Footer';
+// import HomeButton from '../../Components/HomeButton/HomeButton';
+// import Navbar from '../../Components/Navbar/Navbar';
+// import Banner from '../../Components/Banner/Banner';
 
 const Main = () => {
     return (
         <div className='max-w-[1500px]'>
-            <Navbar />
+            {/* <Navbar />
             <Outlet />
             <Footer />
-            <HomeButton />
+            <HomeButton /> */}
+            {/* <Banner /> */}
+            <Bannner />
         </div>
     );
 };
